@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplex Deep Web Browser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="terminal-overlay"></div>
+    <header>
+        <div class="logo">
+            <pre>
+ __  __       _ _   _       _           
+|  \/  |_   _| | |_(_)_ __ | | _____  __
+| |\/| | | | | | __| | '_ \| |/ _ \ \/ /
+| |  | | |_| | | |_| | |_) | |  __/>  < 
+|_|  |_|\__,_|_|\__|_| .__/|_|\___/_/\_\
+                     |_|                
+            </pre>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="about-link">About</a></li>
+                <li><a href="#" id="settings-link">Settings</a></li>
+            </ul>
+        </nav>
+        <div id="auth">
+            <button id="signInBtn" class="neon-button">Access Terminal</button>
+        </div>
+    </header>
+    <main>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Traverse the shadows of the deep web...">
+            <button id="search-button" class="neon-button">Infiltrate</button>
+        </div>
+        <div id="search-options">
+            <button class="option-btn active" data-type="web">Net</button>
+            <button class="option-btn" data-type="images">Visuals</button>
+            <button class="option-btn" data-type="videos">Footage</button>
+            <button class="option-btn" data-type="news">Intel</button>
+            <button class="option-btn" data-type="books">Archives</button>
+        </div>
+        <div id="results-container">
+            <div class="loader" style="display: none;">Decrypting data...</div>
+            <div id="results-content"></div>
+        </div>
+    </main>
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <h2>Terminal Access</h2>
+            <input type="text" id="username" placeholder="Codename">
+            <input type="password" id="password" placeholder="Encryption Key">
+            <button id="signin-submit" class="neon-button">Initialize</button>
+            <button id="google-signin" class="neon-button">Infiltrate via G-Network</button>
+            <button id="close-modal" class="neon-button">Abort</button>
+        </div>
+    </div>
+    <footer>
+        <p>Multiplex v1.0 | Encrypted Connection: Active</p>
+    </footer>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
